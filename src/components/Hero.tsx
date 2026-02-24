@@ -8,9 +8,9 @@ export default function Hero() {
     <section className="hero">
       <div className="container">
         <div className="hero__content fade-in-up">
-          <div className={`hero__badge${IS_AVAILABLE ? '' : ' hero__badge--offline'}`}>
+          <div className="hero__badge">
             <span className={`hero__badge-dot${IS_AVAILABLE ? '' : ' hero__badge-dot--offline'}`} />
-            {IS_AVAILABLE ? 'Available for Work' : 'Not Available'}
+            {IS_AVAILABLE ? 'Available for Work' : 'Currently Working'}
           </div>
 
           <h1 className="hero__title">
@@ -86,6 +86,11 @@ export default function Hero() {
                 <span className="code-attr">{'passion'}</span>
                 <span className="code-bracket">{'='}</span>
                 <span className="code-string">{'"Building UIs"'}</span>
+              </div>
+              <div style={{ paddingLeft: '3.5rem' }}>
+                <span className="code-attr">{'location'}</span>
+                <span className="code-bracket">{'='}</span>
+                <span className="code-string">{'"Trivandrum, Kerala"'}</span>
               </div>
               <div style={{ paddingLeft: '2.5rem' }}>
                 <span className="code-tag">{'/'}</span>

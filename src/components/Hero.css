@@ -41,16 +41,6 @@
 }
 
 
-.hero__badge--offline {
-  background: rgba(239, 68, 68, 0.08);
-  border-color: #ef4444;
-  color: #ef4444;
-}
-
-[data-theme='light'] .hero__badge--offline {
-  background: rgba(239, 68, 68, 0.1);
-}
-
 .hero__badge-dot {
   width: 8px;
   height: 8px;
