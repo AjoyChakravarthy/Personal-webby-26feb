@@ -84,6 +84,30 @@ a.contact__info-value:hover {
   color: var(--color-accent);
 }
 
+/* Social Links */
+.contact__socials {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.contact__social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.contact__social-link:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: rgba(0, 240, 200, 0.08);
+}
+
 /* Form */
 .contact__form {
   display: flex;
