@@ -252,6 +252,27 @@
 }
 
 
+/* GitHub Contribution Graph */
+.hero__github {
+  grid-column: 1 / -1;
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.hero__github-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.hero__github-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
 /* Responsive */
 @media (max-width: 968px) {
   .hero {
@@ -298,5 +319,9 @@
     height: 48px;
     top: -8px;
     right: -8px;
+  }
+
+  .hero__github {
+    margin-top: var(--space-3);
   }
 }

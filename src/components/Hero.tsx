@@ -127,6 +127,14 @@ export default function Hero() {
         <div className="hero__visual hero__visual--desktop">
           <Mockup />
         </div>
+        <div className="hero__github fade-in-up">
+          <span className="hero__github-label">GitHub Contributions</span>
+          <img
+            src="https://ghchart.rshah.org/AjoyChakravarthy"
+            alt="Ajoy Chakravarthy's GitHub contribution graph"
+            className="hero__github-img"
+          />
+        </div>
       </div>
     </section>
   );
