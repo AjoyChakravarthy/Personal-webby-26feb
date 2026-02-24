@@ -213,12 +213,12 @@
 
 
 .hero__mockup-body .code-keyword { color: #C792EA; }
-.hero__mockup-body .code-function { color: #82AAFF; }
+.hero__mockup-body .code-function { color: #77a2ff; }
 .hero__mockup-body .code-string { color: #87b148; }
 .hero__mockup-body .code-tag { color: #FF5370; }
-.hero__mockup-body .code-attr { color: #FFCB6B; }
+.hero__mockup-body .code-attr { color: #ce8807; }
 .hero__mockup-body .code-comment { color: #546E7A; }
-.hero__mockup-body .code-bracket { color: #89DDFF; }
+.hero__mockup-body .code-bracket { color: #20afe8; }
 
 /* Grade Badge */
 .hero__grade {
