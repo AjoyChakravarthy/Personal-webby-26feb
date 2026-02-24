@@ -3,6 +3,77 @@ import './Hero.css';
 
 const IS_AVAILABLE = false;
 
+function Mockup() {
+  return (
+    <>
+      <div className="hero__mockup">
+        <div className="hero__mockup-bar">
+          <span className="hero__mockup-dot" />
+          <span className="hero__mockup-dot" />
+          <span className="hero__mockup-dot" />
+          <span className="hero__mockup-url">portfolio.ajoy.dev</span>
+        </div>
+        <div className="hero__mockup-body">
+          <div>
+            <span className="code-comment">{'// Building something amazing'}</span>
+          </div>
+          <div>
+            <span className="code-keyword">{'const '}</span>
+            <span className="code-function">{'Developer'}</span>
+            <span className="code-bracket">{' = () => {'}</span>
+          </div>
+          <div style={{ paddingLeft: '1.5rem' }}>
+            <span className="code-keyword">{'return '}</span>
+            <span className="code-bracket">{'('}</span>
+          </div>
+          <div style={{ paddingLeft: '2.5rem' }}>
+            <span className="code-tag">{'<'}</span>
+            <span className="code-function">{'Portfolio'}</span>
+          </div>
+          <div style={{ paddingLeft: '3.5rem' }}>
+            <span className="code-attr">{'name'}</span>
+            <span className="code-bracket">{'='}</span>
+            <span className="code-string">{'"Ajoy Chakravarthy"'}</span>
+          </div>
+          <div style={{ paddingLeft: '3.5rem' }}>
+            <span className="code-attr">{'role'}</span>
+            <span className="code-bracket">{'='}</span>
+            <span className="code-string">{'"Frontend Developer"'}</span>
+          </div>
+          <div style={{ paddingLeft: '3.5rem' }}>
+            <span className="code-attr">{'passion'}</span>
+            <span className="code-bracket">{'='}</span>
+            <span className="code-string">{'"Building UIs"'}</span>
+          </div>
+          <div style={{ paddingLeft: '3.5rem' }}>
+            <span className="code-attr">{'location'}</span>
+            <span className="code-bracket">{'='}</span>
+            <span className="code-string">{'"Trivandrum, Kerala"'}</span>
+          </div>
+          <div style={{ paddingLeft: '2.5rem' }}>
+            <span className="code-tag">{'/'}</span>
+            <span className="code-bracket">{'>'}</span>
+          </div>
+          <div style={{ paddingLeft: '1.5rem' }}>
+            <span className="code-bracket">{')'}</span>
+          </div>
+          <div>
+            <span className="code-bracket">{'}'}</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="hero__grade">
+        <img
+          src="/profile.jpg"
+          alt="Ajoy Chakravarthy"
+          className="hero__grade-avatar"
+        />
+      </div>
+    </>
+  );
+}
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -17,6 +88,11 @@ export default function Hero() {
             <span>FRONTEND</span>
             <span className="hero__title-accent">DEVELOPER</span>
           </h1>
+
+          {/* Mockup shown only on mobile, replacing the title */}
+          <div className="hero__visual hero__visual--mobile">
+            <Mockup />
+          </div>
 
           <p className="hero__description">
             I build modern, scalable web applications.
@@ -47,72 +123,9 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero__visual">
-          <div className="hero__mockup">
-            <div className="hero__mockup-bar">
-              <span className="hero__mockup-dot" />
-              <span className="hero__mockup-dot" />
-              <span className="hero__mockup-dot" />
-              <span className="hero__mockup-url">portfolio.ajoy.dev</span>
-            </div>
-            <div className="hero__mockup-body">
-              <div>
-                <span className="code-comment">{'// Building something amazing'}</span>
-              </div>
-              <div>
-                <span className="code-keyword">{'const '}</span>
-                <span className="code-function">{'Developer'}</span>
-                <span className="code-bracket">{' = () => {'}</span>
-              </div>
-              <div style={{ paddingLeft: '1.5rem' }}>
-                <span className="code-keyword">{'return '}</span>
-                <span className="code-bracket">{'('}</span>
-              </div>
-              <div style={{ paddingLeft: '2.5rem' }}>
-                <span className="code-tag">{'<'}</span>
-                <span className="code-function">{'Portfolio'}</span>
-              </div>
-              <div style={{ paddingLeft: '3.5rem' }}>
-                <span className="code-attr">{'name'}</span>
-                <span className="code-bracket">{'='}</span>
-                <span className="code-string">{'"Ajoy Chakravarthy"'}</span>
-              </div>
-              <div style={{ paddingLeft: '3.5rem' }}>
-                <span className="code-attr">{'role'}</span>
-                <span className="code-bracket">{'='}</span>
-                <span className="code-string">{'"Frontend Developer"'}</span>
-              </div>
-              <div style={{ paddingLeft: '3.5rem' }}>
-                <span className="code-attr">{'passion'}</span>
-                <span className="code-bracket">{'='}</span>
-                <span className="code-string">{'"Building UIs"'}</span>
-              </div>
-              <div style={{ paddingLeft: '3.5rem' }}>
-                <span className="code-attr">{'location'}</span>
-                <span className="code-bracket">{'='}</span>
-                <span className="code-string">{'"Trivandrum, Kerala"'}</span>
-              </div>
-              <div style={{ paddingLeft: '2.5rem' }}>
-                <span className="code-tag">{'/'}</span>
-                <span className="code-bracket">{'>'}</span>
-              </div>
-              <div style={{ paddingLeft: '1.5rem' }}>
-                <span className="code-bracket">{')'}</span>
-              </div>
-              <div>
-                <span className="code-bracket">{'}'}</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="hero__grade">
-            <img 
-              src="/profile.jpg" 
-              alt="Ajoy Chakravarthy" 
-              className="hero__grade-avatar"
-            />
-          </div>
-
+        {/* Mockup shown only on desktop */}
+        <div className="hero__visual hero__visual--desktop">
+          <Mockup />
         </div>
       </div>
     </section>

@@ -41,7 +41,7 @@ export default function Contact() {
             Get In <span className="contact__title-accent">Touch</span>
           </h2>
           <p className="contact__subtitle">
-            Have a project in mind or just want to say hello? I'd love to hear from you.
+            Like to work with me or just want to say hello? I'd love to hear from you.
           </p>
         </div>
 

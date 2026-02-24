@@ -51,6 +51,7 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-4);
+  min-width: 0;
 }
 
 .contact__info-icon {
@@ -78,6 +79,8 @@
   font-size: var(--text-base);
   font-weight: 500;
   color: var(--color-text);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 a.contact__info-value:hover {
@@ -216,5 +219,17 @@ a.contact__info-value:hover {
 
   .contact__title {
     font-size: var(--text-3xl);
+  }
+
+  .contact__socials {
+    justify-content: center;
+  }
+
+  .contact__social-link {
+    flex: 1;
+  }
+
+  .contact__submit {
+    width: 100%;
   }
 }
