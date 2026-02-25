@@ -119,6 +119,25 @@
   color: var(--color-accent);
 }
 
+/* GitHub Contribution Graph */
+.works__github {
+  margin-bottom: var(--space-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.works__github-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.works__github-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .works__card {

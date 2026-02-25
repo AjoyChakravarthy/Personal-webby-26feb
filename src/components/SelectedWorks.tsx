@@ -43,6 +43,15 @@ export default function SelectedWorks() {
           </p>
         </div>
 
+        <div className="works__github">
+          <span className="works__github-label">GitHub Contributions</span>
+          <img
+            src="https://ghchart.rshah.org/AjoyChakravarthy"
+            alt="Ajoy Chakravarthy's GitHub contribution graph"
+            className="works__github-img"
+          />
+        </div>
+
         <div className="works__list">
           {projects.map((project, index) => (
             <div

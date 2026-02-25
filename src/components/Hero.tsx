@@ -94,6 +94,11 @@ export default function Hero() {
             <Mockup />
           </div>
 
+          <h1 className="hero__title hero__title--mobile">
+            <span>FRONTEND</span>
+            <span className="hero__title-accent">DEVELOPER</span>
+          </h1>
+
           <p className="hero__description">
             I build modern, scalable web applications.
           </p>
@@ -126,14 +131,6 @@ export default function Hero() {
         {/* Mockup shown only on desktop */}
         <div className="hero__visual hero__visual--desktop">
           <Mockup />
-        </div>
-        <div className="hero__github fade-in-up">
-          <span className="hero__github-label">GitHub Contributions</span>
-          <img
-            src="https://ghchart.rshah.org/AjoyChakravarthy"
-            alt="Ajoy Chakravarthy's GitHub contribution graph"
-            className="hero__github-img"
-          />
         </div>
       </div>
     </section>
