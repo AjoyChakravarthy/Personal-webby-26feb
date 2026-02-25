@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import TechStack from './components/TechStack';
 import SelectedWorks from './components/SelectedWorks';
 import Contact from './components/Contact';
+import NotFound from './components/NotFound';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/tech" element={<TechStack />} />
         <Route path="/works" element={<SelectedWorks />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Analytics />
     </>
