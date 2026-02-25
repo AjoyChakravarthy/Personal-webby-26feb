@@ -56,6 +56,9 @@ export default function Navbar() {
           <NavLink to="/contact" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`} onClick={closeMenu}>
             Contact
           </NavLink>
+          <NavLink to="/gallery" className={({ isActive }) => `navbar__link${isActive ? ' active' : ''}`} onClick={closeMenu}>
+            Gallery
+          </NavLink>
         </div>
       </div>
     </nav>
